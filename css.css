@@ -1,35 +1,66 @@
 img {
     max-width: 100%;
     height: auto;
-    margin : 1em;
+    margin : 10px;
     box-sizing: border-box;
   }
+
+input[type=text]{
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #3a793c;
+}
 
 body{
     margin : 20px;
     font-family : 'Comfortaa';
+    position: relative;
 }
 
 .heading{
     font-family: 'EB Garamond', serif;
     font-size: xx-large;
+    padding: 2em;
 }
 
 .tile{
-    padding: 1em;
     margin : 1em;
     box-sizing: border-box;
+    align-items: center;
 
+}
+
+.icon{
+  margin:5px;
 }
 
 .box{
     box-sizing: border-box;
     padding: 10px;
     box-shadow: 5px 10px 10px #a5a5a5;
+    width: 100%;
+    align-items: center;
 }
 
 figcaption{
     font-weight: bold;
+    text-align: center;
 }
 
 .box-wrap{
@@ -42,12 +73,50 @@ figcaption{
 
 #nav-items{
     text-decoration: none;
-    color :antiquewhite
+    color :antiquewhite;
 }
 
+.rcorners1{
+  border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.side{
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #f0f0f0;
+    
+}
+
+.decorate1{
+  display: flex; 
+  justify-content:center;
+  text-decoration: none;
+}
+
+.sidebar-items{
+  display: flex; 
+  justify-content:center;
+}
+
+.main{
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 .bg-img {
-    background-image: url("static/heading.jpg");
+    background-image: url("./static/heading.jpg");
     min-height: 380px;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,4 +151,34 @@ figcaption{
     background-color: #ddd;
     color: black;
     font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px){
+    .side{
+      flex:100%;
+    }
+
+    .main{
+      flex:100%;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1200px){
+    .side{
+      flex:30%;
+    }
+
+    .main{
+      flex:70%;
+    }
+  }
+
+  @media screen and (min-width: 1201px){
+    .side{
+      flex:25%;
+    }
+
+    .main{
+      flex:75%;
+    }
   }

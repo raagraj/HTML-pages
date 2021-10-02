@@ -1,3 +1,89 @@
 p{
-    border: 1px solid green;
+    
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin : 1em;
+    box-sizing: border-box;
+  }
+
+body{
+    margin : 20px;
+    font-family : 'Comfortaa';
+}
+
+.heading{
+    font-family: 'EB Garamond', serif;
+    font-size: xx-large;
+}
+
+.tile{
+    padding: 1em;
+    margin : 1em;
+    box-sizing: border-box;
+
+}
+
+.box{
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 5px 10px 10px #a5a5a5;
+}
+
+.subtitle{
+    font-weight: bold;
+}
+
+.box-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-items{
+    text-decoration: none;
+    color :antiquewhite
+}
+
+
+.bg-img {
+    background-image: url("/static/heading.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .container {
+    
+    margin: 20px;
+    width: auto;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #555555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'EB Garamond', serif;
+    position: relative;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
+  }

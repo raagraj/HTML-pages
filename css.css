@@ -1,7 +1,3 @@
-p{
-    
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -32,7 +28,7 @@ body{
     box-shadow: 5px 10px 10px #a5a5a5;
 }
 
-.subtitle{
+figcaption{
     font-weight: bold;
 }
 
@@ -51,7 +47,7 @@ body{
 
 
 .bg-img {
-    background-image: url("/static/heading.jpg");
+    background-image: url("static/heading.jpg");
     min-height: 380px;
     background-position: center;
     background-repeat: no-repeat;

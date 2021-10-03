@@ -98,6 +98,12 @@ figcaption{
     
 }
 
+.stick{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .decorate1{
   display: flex; 
   justify-content:center;
@@ -144,7 +150,6 @@ figcaption{
     text-decoration: none;
     font-size: 17px;
     font-family: 'EB Garamond', serif;
-    position: relative;
   }
   
   .topnav a:hover {

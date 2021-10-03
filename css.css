@@ -153,7 +153,7 @@ figcaption{
     font-weight: bold;
   }
 
-  @media screen and (max-width: 768px){
+  @media only screen and (max-device-width: 980px) and (orientation: portrait){
     .side{
       flex:100%;
     }
@@ -163,7 +163,7 @@ figcaption{
     }
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1200px){
+  @media screen and (min-width: 981px) and (max-width: 1200px){
     .side{
       flex:30%;
     }
